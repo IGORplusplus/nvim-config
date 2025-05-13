@@ -4,11 +4,16 @@
 --make command line how it was
 
 require("config.lazy")
-vim. wo. relativenumber = true
+vim.wo.relativenumber = true
 vim.opt.shiftwidth = 4
 if true then
     print "much better"
 end
+
+local todo_float = require("plugins.floatTODO")
+todo_float.setup({
+    target_file = "/mnt/c/Users/igorl/notes/TODO.md"
+})
 
 -- Prevent delete operation from saving to any register
 -- Send deleted content to register 'a'
