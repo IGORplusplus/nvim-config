@@ -1,4 +1,3 @@
-
 function ColorMyPencils(color)
     -- Make sure the colorscheme is loaded first
     color = color or "kanagawa-wave"  -- Default to "kanagawa-wave"

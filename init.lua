@@ -2,9 +2,10 @@
 --add new keymaps
 --add treesitter, plenary, telescope
 --make command line how it was
+vim.api.nvim_create_augroup("OverrideCtrlLInNetrw", { clear = true })
+
 
 require("config.lazy")
-vim.wo.relativenumber = true
 vim.opt.shiftwidth = 4
 if true then
     print "much better"
@@ -30,3 +31,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     end,
 })
 
+vim.opt.termguicolors = true
+vim.g.loaded_man = 1
+vim.wo.number = true
+vim.wo.relativenumber = true
